@@ -1,0 +1,102 @@
+.contact{
+    margin-top: 100px !important;
+    font-family: "Open Sans" !important;
+}
+.contact p{
+    margin: auto;
+    font-size: 30px;
+    color: lightblue;
+}
+/* Styling Fa-Map */
+.contact .fa-map-marker{
+    color: blue;
+    padding: 30px 35px;
+    font-size: 28px;
+    margin: 100px 0 0 70px;
+    border-radius: 100px;
+}
+/* Styling Fa-phone */
+.contact .fa-phone{
+    color: blue;
+    padding: 30px 35px;
+    font-size: 30px;
+    margin: 100px 0 0 70px;
+    border-radius: 100px;
+}
+/* Styling Fa-Envelope */
+.contact .fa-envelope{
+    color: blue;
+    padding: 30px 35px;
+    font-size: 30px;
+    margin: 100px 0 0 70px;
+    border-radius: 100px;
+}
+
+.contact h6{
+    color: grey;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: -90px;
+    font-family: "Open Sans";
+}
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .contact .all-cont h6{
+        margin-left: 170px !important;
+        text-align: center;
+    }
+    .contact .fa{
+        margin-left: 120px !important;
+    }
+    .contact p{
+        margin-left: 100px !important;
+    }
+}
+
+/* KHUSUS Content */
+@media (min-width: 321px) and (max-width: 375px) {
+}
+@media (min-width: 376px) and (max-width: 425px) {
+    .contact .all-cont h6{
+        margin-left: 130px !important;
+    }
+    .contact .fa{
+        margin-left: 150px !important;
+    }
+    .contact p{
+        margin-left: 130px !important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .contact .all-cont h6{
+        position: relative;
+        top: -65px !important;
+    }
+    .contact p{
+        margin-left: 300px !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .contact .all-icon-contact{
+        margin-left: 50vh !important;
+    }    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .contact .all-icon-contact{
+        margin-left: 20vh !important;
+    }    
+}

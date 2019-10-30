@@ -1,0 +1,150 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .nav-land .navbar-brand {
+    font-size: 32px;
+  }
+  .nav-land .navbar .navbar-brand {
+    margin-left: -20px !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav-land .navbar .nav-item {
+    padding-left: 20px;
+  }
+  .nav-land .navbar img {
+    margin-left: 20px;
+  }
+  .nav-land .navbar .signin {
+    margin-left: 18px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-land .navbar .navbar-brand {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+  }
+  .nav-land .navbar .navbar-brand:hover {
+    color: rgb(255, 255, 255);
+  }
+  .nav-land .navbar .navbar-nav .nav-item {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: transparent;
+    position: relative;
+    left: 30px;
+  }
+  .nav-land .navbar .navbar-nav .mar-left {
+    margin-left: 20px !important;
+  }
+  .nav-land .navbar .navbar-nav .oneee {
+    margin-left: 20px;
+  }
+  .nav-land .navbar .navbar-nav .nav-item:hover {
+    color: rgb(255, 255, 255);
+  }
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid white;
+    margin-bottom: -2px !important;
+    margin: auto;
+    transition: 5s !important;
+  }
+  .nav-land img {
+    margin-right: 20px !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .nav-land .navbar .navbar-brand {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+  }
+  .nav-land .navbar .navbar-brand:hover {
+    color: rgb(255, 255, 255);
+  }
+  .nav-land .navbar .navbar-nav .nav-item {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: transparent;
+    position: relative;
+    top: -1px;
+  }
+  .nav-land .navbar .navbar-nav .mar-left {
+    margin-left: 20px !important;
+  }
+  .nav-land .navbar .navbar-nav .oneee {
+    margin-left: 250px;
+  }
+  .nav-land .headr img {
+    margin-left: 20px !important;
+  }
+  .nav-land .navbar .navbar-nav .nav-item:hover {
+    color: rgb(255, 255, 255);
+  }
+  .nav-land .one {
+    margin-right: 30px;
+  }
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid white;
+    margin-bottom: -2px !important;
+    margin: auto;
+    transition: 5s !important;
+  }
+}
+
+/* Semua Version */
+
+.nav-land .navbar {
+  position: relative;
+  z-index: 1;
+}
+.container {
+  position: relative;
+  z-index: 1;
+}
+.navbar-brand {
+  font-family: "Open Sans", serif !important;
+  font-weight: bold !important;
+}
+.navbar .navbar-nav .nav-item {
+  font-family: "Open Sans", serif !important;
+  font-weight: bold !important;
+}
+
+.nav-land img {
+  margin-right: 20px;
+}
+.nav-land .navbar .signin {
+  background: lightblue;
+  color: white;
+  font-family: "Open Sans", serif !important;
+  padding: 10px 40px;
+  font-weight: bold !important;
+  border-radius: 40px;
+  border: none;
+  margin-right: 20px;
+}
+.nav-land .navbar .signin:hover {
+  background: white;
+  color: blue;
+  transition: 1s;
+}
+.nav-land .toggle {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 30px;
+  color: blue !important;
+}

@@ -1,0 +1,181 @@
+.features {
+  /* background: #99b4ff; */
+  background: linear-gradient(
+    45deg,
+    rgba(72, 44, 191, 0.7) 0%,
+    rgba(106, 198, 240, 1) 100%
+  );
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+.features p,
+.features h2 {
+  color: white;
+  font-family: "Open Sans";
+}
+.features p {
+  margin-top: 25px !important;
+  position: relative;
+  top: 12px !important;
+  background: #6fa0f0;
+  padding: 0 10px;
+}
+.features img {
+  width: 100%;
+  margin-top: -20px;
+}
+.features .pe-features {
+  border-bottom: 1px solid white !important;
+  width: 15%;
+  margin: auto;
+  position: relative;
+  bottom: 12px;
+  margin-bottom: 30px !important;
+}
+/* Styling icon features */
+.features .icon-feature {
+  position: relative;
+  left: 50px;
+}
+.features .box-icon {
+  background: white;
+  padding: 20px;
+  margin: 60px 100px 120px 100px;
+  width: 60px;
+  border-radius: 100%;
+  text-align: center;
+  color: lightblue;
+}
+.features .box-icon:hover,
+.features .box2-icon:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(72, 44, 191, 0.7) 0%,
+    rgba(106, 198, 240, 1) 100%
+  );
+  color: white;
+  cursor: pointer;
+}
+.features .box-icon a {
+  position: absolute;
+  left: 200px;
+  color: white;
+  font-size: 20px;
+  font-family: "Open Sans";
+}
+.features .box-icon a:hover {
+  color: white;
+}
+/* Styling icon2 features */
+.features .box2-icon {
+  background: white;
+  padding: 20px;
+  margin: 60px 0px 120px -100px;
+  width: 60px;
+  border-radius: 100%;
+  text-align: center;
+  color: lightblue;
+}
+.features .box2-icon a {
+  position: absolute;
+  left: 40px;
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: white;
+}
+.features .box2-icon a:hover {
+  color: white;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .features .image-features {
+    display: none;
+  }
+  .features h2 {
+    color: white;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-family: "Viga";
+  }
+  .icon-feature a{
+    font-size: 15px !important;
+  }
+  .features p {
+    display: none;
+  }
+  /* styling icon feature */
+  .features .icon-feature2 {
+    display: none;
+  }
+  .features .icon-feature {
+    left: 50px;
+  }
+  .features .box-icon {
+    margin: 130px 0px 130px 0px;
+  }
+  .features .box-icon a {
+    left: 100px;
+  }
+  .features .box-icon .sa-tu,
+  .features .box-icon .du-a {
+    margin-top: -12px;
+  }
+}
+
+/* KHUSUS Content */
+@media (min-width: 321px) and (max-width: 375px) {
+}
+@media (min-width: 376px) and (max-width: 425px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .features .image-features {
+    position: relative;
+    top: 80px;
+    left: 150px;
+  }
+  .features h2 {
+    color: white;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-family: "Viga";
+  }
+  .features p {
+    display: none;
+  }
+  /* styling icon feature */
+  .features .icon-feature2 {
+    display: none;
+  }
+  .features .box-icon {
+    margin: 50px 0px 100px 0px;
+  }
+  .features .box-icon a {
+    left: 100px;
+  }
+  .features .box-icon .sa-tu,
+  .features .box-icon .du-a {
+    margin-top: -15px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .features{
+    height: 100vh;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .features{
+    height: 100vh;
+  }
+}

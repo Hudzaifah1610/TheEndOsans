@@ -1,0 +1,183 @@
+body {
+  background: rgb(240, 251, 255) !important;
+}
+.about img {
+  margin: 100px auto;
+}
+.about .all-about p {
+  margin: auto;
+  margin-top: -70px;
+  color: grey;
+  position: relative;
+  top: 50px;
+  background: rgb(240, 251, 255) !important;
+  padding: 0 10px;
+}
+.about .all-about h6 {
+  margin: auto;
+  font-size: 35px;
+  width: 80%;
+  color: rgb(3, 121, 175);
+  font-family: "Open Sans";
+  text-align: center;
+  line-height: 50px;
+}
+.about .all-about .pe-lorem {
+  width: 70%;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 40px;
+}
+
+.about .all-about .all-image-about {
+  margin-top: 100px;
+}
+.about .all-about .desc-two-about p {
+  margin: 0;
+  width: 70%;
+  top: 0;
+}
+.about .all-about .desc-two-about h5 {
+  font-size: 30px;
+  color: rgb(0, 81, 255);
+  line-height: 60px;
+}
+.about .all-about .desc-two-about {
+  padding: 100px 0px 100px 100px;
+  margin: auto;
+}
+.about .all-about .image-two-about {
+  background-image: url(../../../Image/domino.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .all-about .image-two-about img {
+  width: 90%;
+  padding: 0;
+}
+.about .all-about p {
+  font-family: "Open Sans";
+  line-height: 40px;
+}
+.about .all-about .in-descc .btn {
+  background: linear-gradient(
+    45deg,
+    rgba(72, 44, 191, 1) 0%,
+    rgba(106, 198, 240, 1) 100%
+  ) !important;
+  padding: 13px 50px;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+.all-about .fa {
+  color: rgb(0, 140, 255);
+}
+.about .all-about .in-descc .btn:hover {
+  box-shadow: 2px 2px 6px grey;
+}
+.about .all-about .image-two-aboute {
+  background-image: url(../../../Image/phoneversion.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .all-about .header-pe {
+  position: relative;
+  top: -40px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .about .all-about h6 {
+    font-size: 20px !important;
+    width: 80%;
+    text-align: justify !important;
+  }
+  .about .all-about .pe-lorem {
+    font-size: 15px;
+  }
+  .about .all-about .desc-two-about {
+    padding: 0;
+    margin: 0 !important;
+  }
+  .about .all-about .all-image-about {
+    margin-top: 100px;
+  }
+  .about .all-about .desc-two-about p {
+    margin: auto;
+    width: 70%;
+  }
+  .about .all-about .desc-two-about h5 {
+    font-size: 20px;
+    color: rgb(0, 81, 255);
+    line-height: 60px;
+    margin-left: 50px;
+  }
+  .about .all-about .in-descc .btn {
+    margin-left: 50px;
+  }
+  .about .all-about .in-descc {
+    padding-bottom: 20px;
+  }
+  .about .all-about .image-two-about {
+    height: 100vh;
+  }
+  .about .all-about p {
+    text-align: justify !important;
+  }
+}
+
+/* KHUSUS Content */
+@media (min-width: 321px) and (max-width: 375px) {
+  .about .all-about .header-pe {
+    margin-left: 30% !important;
+  }
+}
+@media (min-width: 376px) and (max-width: 425px) {
+  .about .all-about .header-pe {
+    margin-left: 30% !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about .all-about .image-two-about {
+    height: 100vh;
+  }
+  .about .all-about .header-pe {
+    margin-left: 32% !important;
+  }
+  .about .all-about h6 {
+    text-align: justify;
+  }
+  .about p {
+    text-align: justify !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about .all-about h6 {
+    font-size: 30px !important;
+    width: 90%;
+  }
+  .about .all-about .pe-lorem {
+    font-size: 15px;
+  }
+  .about .all-about .header-pe {
+    margin-left: 42% !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

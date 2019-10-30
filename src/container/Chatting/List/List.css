@@ -1,0 +1,60 @@
+.list-profile {
+  position: relative;
+  bottom: 0 !important;
+}
+
+.list-profile h5 {
+  font-size: 15px;
+  font-family: viga;
+}
+.list-profile p {
+  font-size: 10px;
+  font-family: viga;
+}
+.list-profile .desc-list {
+  position: relative;
+  left: 3%;
+  top: 17%;
+}
+.list {
+  padding: 5px 0;
+}
+
+.list:hover {
+  background: rgba(202, 198, 198, 0.8);
+}
+
+.list-profile .list img {
+  border-radius: 40px;
+}
+
+/* STYLING INPUT */
+.has-search .form-control {
+  padding-left: 2.2rem;
+  margin-top: 0;
+  font-family: "Abel", sans-serif;
+  background: rgb(255, 255, 255);
+  margin-top: -8px;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  top: 0.5rem;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: rgb(170, 165, 165);
+}
+
+.list-profile .innput {
+  background: rgb(238, 237, 237);
+  border-bottom: 0.5px solid rgb(182, 185, 189);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-bottom: 3%;
+}

@@ -1,0 +1,253 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .jumb-land h1 {
+    position: relative;
+    top: 30px;
+    font-size: 27px;
+    line-height: 35px !important;
+    font-weight: 600;
+  }
+  .jumbotron p {
+    position: relative;
+    top: 30px;
+    font-size: 16px;
+    line-height: 30px !important;
+    font-weight: 400 !important;
+  }
+  .jumbotron button {
+    position: relative;
+    top: 30px;
+  }
+  .jumbotron:after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  .jumbotron {
+    height: 430px !important;
+  }
+  .jumbotron h1 {
+    line-height: 30px;
+  }
+  .jumbotron p {
+    line-height: 20px;
+  }
+  .jumbotron .iemji {
+    display: none;
+  }
+}
+
+/* KHUSUS Content */
+@media (min-width: 321px) and (max-width: 375px) {
+  .jumbotron h1,
+  p {
+    width: 100%;
+  }
+  .jumbotron h1 {
+    line-height: 35px !important;
+  }
+  .jumbotron p {
+    line-height: 30px !important;
+  }
+}
+@media (min-width: 376px) and (max-width: 425px) {
+  .jumbotron h1,
+  p {
+    width: 100%;
+  }
+  .jumbotron h1 {
+    line-height: 35px !important;
+  }
+  .jumbotron p {
+    line-height: 30px !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .jumbotron h1,
+  p {
+    width: 80% !important;
+  }
+  .jumbotron h1 {
+    position: relative;
+    top: 50px;
+    font-size: 35px;
+    font-weight: 600 !important;
+    line-height: 40px !important;
+  }
+  .jumbotron p {
+    position: relative;
+    top: 50px;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 40px !important;
+  }
+  .jumbotron button {
+    position: relative;
+    top: 50px;
+  }
+  .jumbotron:after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  .jumbotron {
+    height: 470px !important;
+  }
+  .jumbotron h1 {
+    line-height: 30px;
+  }
+  .jumbotron p {
+    line-height: 20px;
+  }
+  .jumbotron h1,
+  p {
+    width: 50%;
+  }
+  .jumbotron .iemji {
+    display: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  p {
+    width: 100%;
+  }
+  .jumbotron h1 {
+    line-height: 60px !important;
+  }
+  .jumbotron p {
+    line-height: 40px !important;
+  }
+  .jumbotron {
+    margin-top: -86px;
+  }
+  .jumbotron h1 {
+    position: relative;
+    top: 150px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 600 !important;
+    line-height: 35px;
+  }
+  .jumbotron p {
+    position: relative;
+    top: 150px;
+    font-size: 16px;
+    font-weight: 100 !important;
+    line-height: 26px;
+  }
+  .jumbotron button {
+    position: relative;
+    top: 150px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .jumbotron {
+    margin-top: -86px;
+  }
+  .jumbotron h1 {
+    position: relative;
+    top: 150px;
+    left: 100px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 600 !important;
+    line-height: 50px;
+  }
+  .jumbotron p {
+    position: relative;
+    top: 150px;
+    left: 100px;
+    font-size: 25px;
+    font-weight: 100 !important;
+    line-height: 46px;
+  }
+  .jumbotron button {
+    position: relative;
+    top: 150px;
+    left: 100px;
+  }
+  .jumbotron .desc-jumb {
+    position: relative;
+    top: 30px;
+  }
+}
+
+/* Semua Version */
+
+.jumbotron {
+  background-image: url(../../../Image/hand.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+  position: relative;
+}
+.jumbotron:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(72, 44, 191, 0.7) 0%,
+    rgba(106, 198, 240, 1) 100%
+  );
+  position: absolute;
+  bottom: 0;
+}
+.jumb-land .jumbotron h1,
+.jumb-land p,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+.jumbotron h1 {
+  color: rgb(255, 255, 255);
+}
+.jumbotron p {
+  color: rgb(255, 255, 255);
+  width: 80%;
+}
+
+.jumbotron button {
+  background: white;
+  padding: 15px 50px;
+  margin-top: 20px;
+  letter-spacing: 3px;
+  border-radius: 30px;
+  font-weight: 900 !important;
+}
+.jumbotron button:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(72, 44, 191, 1) 0%,
+    rgba(106, 198, 240, 1) 100%
+  );
+  transition: 1s !important;
+  border: none;
+}
+.jumbotron .container img {
+  position: relative;
+  top: -20px;
+}
+
+.jumbotron .iemji {
+  width: 350px;
+  height: 640px;
+  float: left;
+  margin-top: 30px;
+}
+.jumbotron img {
+  width: 235%;
+  left: -90%;
+  margin-left: 18%;
+}

@@ -1,0 +1,172 @@
+.register {
+  /* background: yellow; */
+  height: 100vh;
+}
+/* Styling Left */
+.register .left {
+  background: lightblue;
+  height: 100vh;
+}
+.register .in-left {
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+.register img {
+  width: 45px;
+}
+.register .left p {
+  position: relative;
+  left: 20px;
+  font-size: 25px;
+  top: 5px;
+  font-family: "Open Sans", serif;
+  font-weight: bold;
+}
+.register .left h1 {
+  font-size: 30px;
+  width: 90%;
+  position: relative;
+  top: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Styling Right */
+.register .right {
+  height: 100vh;
+  background: rgb(251, 251, 251);
+  overflow: auto;
+}
+.register .right a {
+  float: right;
+  margin: 10px 20px 0 0;
+  font-family: "Open";
+}
+.register .right span {
+  color: blue;
+  cursor: pointer;
+  font-size: 15px;
+  position: relative;
+  top: -10px;
+  left: 5px;
+}
+/* Styling in-signup */
+.register .right .in-signup {
+  margin: auto;
+  position: relative;
+  top: 100px;
+}
+.register .right .in-signup p {
+  font-size: 25px;
+}
+.register .haer {
+  border-bottom: 1px solid rgb(238, 236, 236);
+  margin-top: 20px;
+}
+.register label {
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+.register input {
+  display: table;
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 8px 10px;
+  background: rgb(231, 238, 241);
+  border: none;
+  border-radius: 6px;
+  font-family: "Open Sans";
+}
+.register .last {
+  margin: 20px 0 50px 0;
+  background: lightcoral;
+  border-radius: 6px;
+  letter-spacing: 2px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .register .left {
+    display: none;
+  }
+  .register .last {
+    padding: 10px 20px;
+    outline: none !important;
+    border: none;
+  }
+  .register .btn-secondary {
+    margin: 0 0px 0 2px;
+    float: none !important;
+  }
+}
+
+/* KHUSUS Content */
+@media (min-width: 321px) and (max-width: 375px) {
+  .register .btn-secondary {
+    margin: 0 0px 0 10px;
+    float: none !important;
+  }
+}
+@media (min-width: 376px) and (max-width: 425px) {
+  .register .btn-secondary {
+    margin: 0 0px 0 10px;
+    float: none !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .register .left {
+    display: none;
+  }
+  .register .right .in-signup {
+    width: 60%;
+  }
+  .register .btn-secondary {
+    margin: 0 0px 0 10px;
+    float: none !important;
+  }
+  .register .last {
+    padding: 10px 20px;
+    outline: none !important;
+    border: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .register .right .btn-primary {
+    padding: 12px 70px;
+    font-weight: bold;
+    outline: none !important;
+    border: none;
+  }
+  .register .right .btn-secondary {
+    padding: 12px 15px;
+    margin-left: 15px;
+    background: rgb(149, 160, 170);
+    border: none;
+  }
+  .register .right .fa {
+    font-size: 15px;
+  }
+  .register .right .fa-unlock-alt {
+    position: relative;
+    left: -50px !important;
+  }
+  .register .right .in-signup {
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top: 100px;
+  }
+}

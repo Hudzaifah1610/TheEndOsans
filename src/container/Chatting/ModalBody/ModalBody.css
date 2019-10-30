@@ -1,0 +1,29 @@
+.onne {
+  margin-top: -52px !important;
+  padding: 10px 10px 0;
+}
+
+.inbox {
+  padding: 10px 10px 0;
+  cursor: pointer;
+}
+
+.inbox:hover {
+  background: rgba(202, 198, 198, 0.8);
+}
+
+.modalbody .fa {
+  position: relative;
+  top: 5px;
+  margin: 0 35px 0 5px;
+}
+
+.modalbody p {
+  font-size: 17px;
+  position: relative;
+  top: 1px;
+}
+.modalbody .pe-add{
+  position: relative;
+  right: 6px;
+}

@@ -1,0 +1,19 @@
+.in-chatt .wrapp-nav-all{
+    position: relative;
+    top: 0.5rem;
+}
+
+
+.in-chatt .wrapp-desc{
+    position: relative;
+    top: 0.8rem;
+    left: 1rem;
+    font-family: viga;
+    color: whitesmoke;
+}
+
+.in-chatt img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
