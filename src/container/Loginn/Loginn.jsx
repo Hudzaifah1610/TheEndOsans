@@ -2,6 +2,7 @@ import React from "react";
 import logos2 from "../../Image/logos2.png";
 import { Link, Redirect } from "react-router-dom";
 import Axios from "axios";
+import "./Login.css";
 // import ReactLoading from 'react-loading';
 
 class Loginn extends React.Component {
@@ -61,7 +62,10 @@ class Loginn extends React.Component {
     if (localStorage.getItem("token", "user")) {
       return <Redirect to="/chat" />;
     } else if (isLoading) {
-      return <h1>Loading</h1>
+      return <div class="loading-container">
+      <div class="loading"></div>
+      <div id="loading-text">loading</div>
+  </div>
     }
     return (
       <div className="register">

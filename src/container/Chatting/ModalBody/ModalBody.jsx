@@ -2,6 +2,7 @@ import React from "react";
 import "./ModalBody.css";
 import ModalSetting from "../MenuModal/ModalSetting/ModalSetting";
 import ModalContact from "../MenuModal/ModalContact/ModalContact";
+import ModalPrivacy from "../MenuModal/ModalPrivacy/ModalPrivacy";
 
 const ModalBody = ({modalLogOut, onClick, onChangeAddFriend, onSubmitAddFriend, data, dataUser}) => {
   return (
@@ -11,10 +12,11 @@ const ModalBody = ({modalLogOut, onClick, onChangeAddFriend, onSubmitAddFriend, 
           <i className="fa fa-inbox"></i>
           <p>Inbox</p>
         </div>
-        <div className="row inbox">
+        <div className="row inbox" data-toggle="modal" data-target="#privacy">
           <i className="fa fa-star"></i>
           <p>Privacy</p>
         </div>
+        <ModalPrivacy/>
         <div className="row inbox"  data-toggle="modal" data-target="#contact">
           <i className="fa fa-user-plus"></i>
           <p className="pe-add">Friends</p>

@@ -168,13 +168,13 @@ class ModalSetting extends Component {
                     />
                   </div>
                 </div>
-                <div className="row">
+                {/* <div className="row">
                   <div className="col">
                     <label htmlFor="input">Password </label>
                     <i className="fa fa-eye" onClick={this.onClickMata1}></i>
                     <input
                       className="input-form shadow-none"
-                      value="Argo-wilis"
+                      placeholder="Edit your password"
                       type={mata1 ? "text" : "password"}
                     />
                   </div>
@@ -185,11 +185,11 @@ class ModalSetting extends Component {
                     <i className="fa fa-eye" onClick={this.onClickMata2}></i>
                     <input
                       className="input-form shadow-none"
-                      value="Argo-wilis"
+                      placeholder="Confirm password"
                       type={mata2 ? "text" : "password"}
                     />
                   </div>
-                </div>
+                </div> */}
               </div>
               <div class="modal-footer">
                 <button

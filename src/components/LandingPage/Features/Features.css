@@ -9,6 +9,9 @@
   height: auto;
   margin-top: 100px;
 }
+.features .row{
+  /* margin: 0 -100px; */
+}
 .features p,
 .features h2 {
   color: white;

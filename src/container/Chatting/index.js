@@ -12,6 +12,7 @@ import Input from "./Input/Input";
 
 import { connect } from "react-redux";
 import { handleAddFriend, handleChangeKontak } from "../../Redux/Action";
+import Deleted from "./ChatRoom/Deleted";
 
 class Chatting extends Component {
   constructor(props) {
@@ -274,7 +275,11 @@ class Chatting extends Component {
                               {user.id !== pesan.sender_id ? (
                                 <div className="row">
                                   <div className="col">
-                                    <div className="penerima">
+                                    <div
+                                      className="penerima"
+                                      data-toggle="modal"
+                                      data-target=".deleted"
+                                    >
                                       {/* <p className="user">
                                         ~ Abdillah Al-Atsary ~
                                       </p> */}
@@ -286,7 +291,11 @@ class Chatting extends Component {
                               ) : (
                                 <div className="row">
                                   <div className="col">
-                                    <div className="pengirim">
+                                    <div
+                                      className="pengirim"
+                                      data-toggle="modal"
+                                      data-target=".deleted"
+                                    >
                                       {/* <p className="user">
                                         ~ Syuhaib Ar Ruumy ~
                                       </p> */}
@@ -296,6 +305,7 @@ class Chatting extends Component {
                                   </div>
                                 </div>
                               )}
+                              <Deleted />
                             </div>
                           );
                         })}

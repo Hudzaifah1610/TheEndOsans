@@ -1,7 +1,19 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .nav-land{
+    /* background: rgb(114, 180, 255); */
+    background: linear-gradient(
+      45deg,
+      rgba(72, 44, 191, 0.3) 0%,
+      rgba(106, 198, 240, 0.4) 100%
+    );
+  }
+  .nav-land .fa-bars{
+    color: white;
+  }
   .nav-land .navbar-brand {
     font-size: 32px;
+    color: white;
   }
   .nav-land .navbar .navbar-brand {
     margin-left: -20px !important;

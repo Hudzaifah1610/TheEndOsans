@@ -1,0 +1,21 @@
+.deleted {
+  position: fixed;
+  top: 30%;
+}
+.deleted .modal-content {
+  padding: 20px;
+}
+.deleted .modal-content p {
+  font-size: 12px;
+}
+.deleted .modal-footer {
+  padding: 0;
+  border-top: 0;
+}
+.deleted .modal-footer p {
+  position: relative;
+  top: 15px;
+  font-size: 15px;
+  color: blue;
+  cursor: pointer;
+}
