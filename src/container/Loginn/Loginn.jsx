@@ -119,8 +119,8 @@ class Loginn extends React.Component {
                         value={this.state.password}
                         onChange={this.handleChangeLogin}
                       />
-                      <label htmlFor="input">Re-Password</label>
-                      <input type="password" />
+                      {/* <label htmlFor="input">Re-Password</label>
+                      <input type="password" /> */}
                       <button type="submit" className="btn-primary last">
                         Sign In
                       </button>

@@ -9,3 +9,8 @@ export const handleChangeKontak = value => ({
   type : ActionType.KONTAK_USER,
   value
 })
+
+export const handleSubmitPesanByid = value => ({
+  type: ActionType.DELETE_PESAN,
+  value
+})

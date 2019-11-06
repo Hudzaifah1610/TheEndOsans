@@ -2,7 +2,8 @@ import ActionType from "../Action/ActionType";
 
 const globalState = {
   dataUser: [],
-  kontakUser : []
+  kontakUser : [],
+  deletePesan: []
 };
 
 export const rootReducer = (state = globalState, action) => {
@@ -16,6 +17,11 @@ export const rootReducer = (state = globalState, action) => {
         return {
           ...state,
           kontakUser : action.value
+        }
+        case ActionType.DELETE_PESAN: 
+        return {
+          ...state,
+          deletePesan: action.value
         }
       default : 
         return state

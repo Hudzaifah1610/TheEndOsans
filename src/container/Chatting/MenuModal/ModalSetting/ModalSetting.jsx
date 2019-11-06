@@ -35,24 +35,27 @@ class ModalSetting extends Component {
     if (textButton === "Edit") {
       this.onclickButton();
     } else {
-      this.handleUpdateProfile()
+      this.handleUpdateProfile();
     }
   };
 
   handleUpdateProfile = () => {
     const { nama, email, no_telp } = this.state;
-    const idddd = this.state.user.id
+    const idddd = this.state.user.id;
     const kirimIni = {
       name: nama,
       email,
-      no_telp
+      no_telp,
+      id: idddd
     };
-    Axios.put(`https://rocky-refuge-01694.herokuapp.com/api/updateProfile/${idddd}`, {kirimIni}).then(res => {
-      console.log("data update profile",res.data)
+    Axios.post(`https://rocky-refuge-01694.herokuapp.com/api/updateProfile/`, {
+      kirimIni
+    }).then(res => {
+      console.log("data update profile", res.data);
       this.setState({
-        textButton : "Edit"
-      })
-    })
+        textButton: "Edit"
+      });
+    });
   };
 
   onclickButton = () => {
@@ -107,22 +110,22 @@ class ModalSetting extends Component {
     return (
       <div className="modalsett">
         <div
-          class="modal fade"
+          className="modal fade"
           id="modalsetting"
-          tabindex="-1"
+          tabIndex="-1"
           role="dialog"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLabel">
                   Setting Your Account
                 </h5>
                 <button
                   type="button"
-                  class="close"
+                  className="close"
                   data-dismiss="modal"
                   aria-label="Close"
                   style={{ color: "white" }}
@@ -131,7 +134,7 @@ class ModalSetting extends Component {
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body form-edit">
+              <div className="modal-body form-edit">
                 <div className="row">
                   <div className="col">
                     <label htmlFor="input">Name </label>
@@ -191,17 +194,17 @@ class ModalSetting extends Component {
                   </div>
                 </div> */}
               </div>
-              <div class="modal-footer">
+              <div className="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-primary bton-cancel shadow-none"
+                  className="btn btn-primary bton-cancel shadow-none"
                   onClick={onClickCancelUpdate}
                 >
                   Cancel
                 </button>
                 <button
                   type="button"
-                  class="btn btn-secondary bton-close shadow-none"
+                  className="btn btn-secondary bton-close shadow-none"
                   onClick={this.handleSaveProfile}
                 >
                   {textButton}

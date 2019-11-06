@@ -94,22 +94,22 @@ class ModalContact extends Component {
     return (
       <div className="modalcontact">
         <div
-          class="modal fade"
+          className="modal fade"
           id="contact"
-          tabindex="-1"
+          tabIndex="-1"
           role="dialog"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLabel">
                   Add Your Friend
                 </h5>
                 <button
                   type="button"
-                  class="close"
+                  className="close"
                   data-dismiss="modal"
                   aria-label="Close"
                   style={{ color: "white" }}
@@ -125,7 +125,7 @@ class ModalContact extends Component {
                   value={this.state.pin}
                 />
               </form>
-              {/* <div class="modal-body overflow-auto">
+              {/* <div className="modal-body overflow-auto">
                 <div className="row all-desc-friend">
                   <div className="col in-friend">
                     <img src={human1} alt="" className="float-left" />
@@ -172,7 +172,7 @@ class ModalContact extends Component {
                   </div>
                 </div>
               ))}
-              {/* <div class="modal-footer">
+              {/* <div className="modal-footer">
                 <button
                   type="button"
                   class="btn btn-secondary bton-close"

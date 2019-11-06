@@ -6,12 +6,12 @@ import Axios from "axios";
 
 import NavTop from "./NavTop/NavTop";
 import NavTop2 from "./NavTop/NavTop2";
-import List from "./List/List";
+import "./List/List.css";
 import ChatRoom from "./ChatRoom/ChatRoom";
 import Input from "./Input/Input";
 
 import { connect } from "react-redux";
-import { handleAddFriend, handleChangeKontak } from "../../Redux/Action";
+import { handleAddFriend, handleChangeKontak, handleSubmitPesanByid } from "../../Redux/Action";
 import Deleted from "./ChatRoom/Deleted";
 
 class Chatting extends Component {
@@ -108,10 +108,6 @@ class Chatting extends Component {
 
     this.props.handleChangeNameContact(tampilContact);
 
-    const timeStamp = new Date();
-
-    console.log("waktuuu", timeStamp);
-
     console.log("Ini yang tamil setelah diklik", tampilContact.friend_id);
     this.setState({
       receiver_id: idContact,
@@ -146,12 +142,17 @@ class Chatting extends Component {
 
   handleSubmitChat = e => {
     e.preventDefault();
+    const getMenit = new Date().getMinutes();
+    const getjam = new Date().getHours()
+
+    const waktu = (getjam+"."+getMenit)
 
     const { sendChat, user, friend_id } = this.state;
     const butuhDataIni = {
       message: sendChat,
       sender_id: user.id,
-      receiver_id: friend_id
+      receiver_id: friend_id,
+      time: waktu
     };
 
     console.log(butuhDataIni);
@@ -167,9 +168,14 @@ class Chatting extends Component {
       this.setState({
         sendChat: "",
         isLoading: false
-      });
+      }, console.log(waktu));
     });
   };
+
+  handleSubmitPesanByid = (data)=> {
+    console.log("inipesan klik yang berhasil", data)
+    this.props.handleSubmitPesanByid(data)
+  }
 
   // Chat Refresh
   componentDidUpdate(prevProps, prevState) {
@@ -192,7 +198,8 @@ class Chatting extends Component {
       handleChangeImage,
       handleChatRoomClick,
       handleSubmitChat,
-      changeChat
+      changeChat,
+      handleSubmitPesanByid
     } = this;
 
     if (!localStorage.getItem("token", "user")) {
@@ -271,7 +278,9 @@ class Chatting extends Component {
                       <div className="col all-message">
                         {isiPesan.map(pesan => {
                           return (
-                            <div key={pesan.id}>
+                            <div key={pesan.id}
+                              onClick={() => handleSubmitPesanByid(pesan)}
+                            >
                               {user.id !== pesan.sender_id ? (
                                 <div className="row">
                                   <div className="col">
@@ -340,7 +349,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   handleAddFriends: dataUser => dispatch(handleAddFriend(dataUser)),
-  handleChangeNameContact: dataUser => dispatch(handleChangeKontak(dataUser))
+  handleChangeNameContact: dataUser => dispatch(handleChangeKontak(dataUser)),
+  handleSubmitPesanByid: dataUser => dispatch(handleSubmitPesanByid(dataUser))
 });
 export default connect(
   mapStateToProps,

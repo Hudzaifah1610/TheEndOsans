@@ -1,27 +1,50 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import Axios from "axios";
 
 class ModalPrivacy extends Component {
-  state = {};
+  state = {
+    password: ""
+  };
+
+  onChangePassword = e => {
+    console.log(e.target.value);
+    this.setState({
+      password: e.target.value
+    });
+  };
+
+  handleSavePassword = () => {
+    const idPassword = this.props.password;
+    const changepassword = {
+      password: this.state.password,
+      id: idPassword
+    };
+    Axios.put(
+      `https://rocky-refuge-01694.herokuapp.com/api/changePassword`,
+      { changepassword }
+    ).catch(err => console.log(err));
+  };
   render() {
     return (
       <div className="modalsett">
         <div
-          class="modal fade"
+          className="modal fade"
           id="privacy"
-          tabindex="-1"
+          tabIndex="-1"
           role="dialog"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLabel">
                   Setting Your Privacy
                 </h5>
                 <button
                   type="button"
-                  class="close"
+                  className="close"
                   data-dismiss="modal"
                   aria-label="Close"
                   style={{ color: "white" }}
@@ -30,16 +53,19 @@ class ModalPrivacy extends Component {
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body form-edit">
+              <div className="modal-body form-edit">
                 <div className="row">
                   <div className="col">
                     <label htmlFor="input">Password </label>
                     <i className="fa fa-eye" onClick={this.onClickMata1}></i>
                     <input
+                      name="password"
+                      onChange={this.onChangePassword}
+                      value={this.state.password}
                       className="input-form shadow-none"
                       // value="Edit Your Password"
                       placeholder="Edit your password"
-                    //   type={mata1 ? "text" : "password"}
+                      //   type={mata1 ? "text" : "password"}
                     />
                   </div>
                 </div>
@@ -51,25 +77,25 @@ class ModalPrivacy extends Component {
                       className="input-form shadow-none"
                       // value="Confirm Your Password"
                       placeholder="Confirm password"
-                    //   type={mata2 ? "text" : "password"}
+                      //   type={mata2 ? "text" : "password"}
                     />
                   </div>
                 </div>
               </div>
-              <div class="modal-footer">
+              <div className="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-primary bton-cancel shadow-none"
-                //   onClick={onClickCancelUpdate}
+                  className="btn btn-primary bton-cancel shadow-none"
+                  //   onClick={onClickCancelUpdate}
                 >
                   Cancel
                 </button>
                 <button
                   type="button"
-                  class="btn btn-secondary bton-close shadow-none"
-                  onClick={this.handleSaveProfile}
+                  className="btn btn-secondary bton-close shadow-none"
+                  onClick={this.handleSavePassword}
                 >
-                    Edit
+                  Edit
                   {/* {textButton} */}
                 </button>
                 <script src=""></script>
@@ -82,4 +108,8 @@ class ModalPrivacy extends Component {
   }
 }
 
-export default ModalPrivacy;
+const mapStateToProps = state => ({
+  password: state.dataUser.id
+});
+
+export default connect(mapStateToProps)(ModalPrivacy);
